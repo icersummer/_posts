@@ -67,10 +67,10 @@ links = (
 
 ## 建立 _posts 仓库
 
-使用 github 存储 posts 文件，去 github 新建一个仓库，命名为 _posts.复制仓库git地址，比如我的是 <https://github.com/messense/_posts.git> ，然后在 catsup 目录执行：
+使用 github 存储 posts 文件，去 github 新建一个仓库，命名为 _posts.复制仓库git地址，然后在 catsup 目录执行：
 
 ```bash
-git clone https://github.com/messense/_posts.git
+git clone /url/to/your/_posts.git
 ```
 
 ## 配置 webhook
