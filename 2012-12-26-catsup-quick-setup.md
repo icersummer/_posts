@@ -83,13 +83,13 @@ nohup python catsup.py webhook --port=5555 &
 
 或者使用 supervisord 管理 webhook，安装 supervisord 并修改配置文件 /etc/supervisord.conf，增加如下配置：
 
->[program:webhook]
->command=python /path/to/catsup.py webhook --port=5555
->user=your_username
->process_name=webhook
->numproc=1
->autostart=true
->autorestart=true
+    [program:webhook]
+    command=python /path/to/catsup.py webhook --port=5555
+    user=your_username
+    process_name=webhook
+    numproc=1
+    autostart=true
+    autorestart=true
 
 注意将其中的 /path/to/catsup.py 和 your_username 改成实际环境中的取值。
 
@@ -105,7 +105,7 @@ nohup python catsup.py webhook --port=5555 &
 
 为了让你的域名能正常访问catsup，添加Nginx配置文件catsup.conf
 
-```conf
+```nginx
 server {
     listen 80;
     server_name demo.com;
