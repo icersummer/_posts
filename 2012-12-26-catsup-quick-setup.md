@@ -67,7 +67,7 @@ links = (
 
 ## 建立 _posts 仓库
 
-使用 github 存储 posts 文件，去 github 新建一个仓库，命名为 _posts.复制仓库git地址，比如我的是 https://github.com/messense/_posts.git ，然后在 catsup 目录执行：
+使用 github 存储 posts 文件，去 github 新建一个仓库，命名为 _posts.复制仓库git地址，比如我的是 <https://github.com/messense/_posts.git> ，然后在 catsup 目录执行：
 
 ```bash
 git clone https://github.com/messense/_posts.git
@@ -95,7 +95,7 @@ nohup python catsup.py webhook --port=5555 &
 
 配置好 supervisord.conf 之后，执行 supervisord 启动 supervisord 守护进程或者执行 supervisorctl 后输入 reload 重新加载程序。你可以通过一些配置将 supervisord 设置为开机启动，具体操作方法请 Google 一下。
 
-现在我们的 webhook 已经在运行之中了，假如你的网址是 http://demo.com ，那么你的 catsup webhook 地址便是 http://demo.com:5555/webhook 。打开你的 _posts 的 GitHub 项目地址，点击右边的 Admin ，打开后在左侧栏里找到 Service Hooks，点击 WebHook URLs，填写这个 Webhook 地址即可。
+现在我们的 webhook 已经在运行之中了，假如你的网址是 <http://demo.com> ，那么你的 catsup webhook 地址便是 <http://demo.com:5555/webhook> 。打开你的 _posts 的 GitHub 项目地址，点击右边的 Admin ，打开后在左侧栏里找到 Service Hooks，点击 WebHook URLs，填写这个 Webhook 地址即可。
 
 ## 生成静态页面
 
